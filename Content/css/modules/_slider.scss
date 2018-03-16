@@ -1,0 +1,156 @@
+// Slider
+
+
+.half-cloud{
+	width: 26%;
+	height: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	@extend .block;
+	background-color: $secondary-color;
+	@include transition(width .5s ease, opacity .5s .5s, visibility .5s .5s);
+	position: absolute;
+	visibility: visible;
+
+	&:after{
+		content: ' ';
+		width: 50.5%;
+		min-width: 200px;
+		height: 100%;
+		@extend .block;
+		top: 0;
+		right: -45%;
+		position: absolute;
+		background: url('../images/cloud-half-left.png') no-repeat right top;
+		background-size: auto 117.5%;
+		/*background-color: $secondary-color;*/
+	}
+
+	&:before{
+		content: ' ';
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		@extend .block;
+		background-color: $secondary-color;
+	}
+
+}
+
+
+.fp-slides{
+	width: 80%;
+	height: 70%;
+	top: 150px;
+	left: 10%; 
+	@include opacity(1);
+}
+
+.fp-table{
+	overflow: hidden;
+	@extend .relative;
+}
+
+.intro{
+	@extend .relative;
+	z-index: 20;
+
+	.btn{
+		margin-top: 25px;
+		left: 5%;
+		@include opacity(0);
+		@include transform(translate(0, 60px));
+		@include transition(all .28s linear);
+	}
+
+	.title-float{		
+		left: 5%;
+		@extend .relative;
+		font-size: 34px;
+		@include opacity(0);
+		@include transition(all .25s linear);
+	}
+
+	.description-float{
+		left: 5%;
+		font-size: 70px;
+		line-height: 74px;
+		color: $primary-color;
+		font-weight: 700;
+		@extend .relative;
+		@include opacity(0);
+		@include transition(all .25s linear);
+	}
+
+	&.up{
+		.title-float,
+		.description-float,
+		.btn{
+			@include transform(translate(0, 60px));
+		}
+	}
+
+	&.down{
+		.title-float,
+		.description-float,
+		.btn{
+			@include transform(translate(0, -60px));
+		}
+	}
+
+	&.active{
+		.title-float,
+		.description-float,
+		.btn{
+			@include opacity(1);
+			@include transform(translate(0, 0));
+		}
+	}
+}
+
+.hero-intro{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: table;
+
+	.intro{
+		left: 2%;
+		top: 50%;
+		vertical-align: middle;
+		visibility: hidden;
+		@include opacity(0);
+		@extend .absolute;
+		@include transform(translateY(-50%));
+
+		&.active{
+			visibility: visible;
+			@include opacity(1);
+		}
+	}
+}
+
+.fp-completely{
+	.intro{
+		.title-float,
+		.description-float,
+		.btn{
+			@include opacity(1);
+			@include transform(translate(0, 0));
+		}
+	}
+}
+
+
+#primarySlider{	
+	background: #ccc url('../images/hero/beacons.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+
+#secondarySlider{	
+	background: url('../images/hero/pedalike.jpg') no-repeat 0 0;
+    background-size: cover;
+}

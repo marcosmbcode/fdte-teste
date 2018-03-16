@@ -1,0 +1,67 @@
+
+
+/* MOBILE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 980px) {
+
+	.half-cloud{
+		width: 65%;
+	}
+
+	.grade{
+		width:150%;
+
+		&.dark{
+			width: 170%;
+			top: 15%;
+			right: -120%;
+		}
+
+		&.light{
+			bottom: 0;
+			left: -109%;
+		}
+	}
+
+	/* Form */
+	.form{
+		.form-group{
+			width: 60%;
+		}
+
+	}
+
+
+	.grid-item{
+		position: relative !important;
+		width: 50% !important;
+		height: auto !important;
+	}
+
+
+}
+
+/* MOBILE LANDSCAPE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) and (orientation: landscape) {
+
+
+	.intro{
+		.title-float{
+			font-size: 24px;
+		}
+		.description-float{
+			font-size: 50px;
+			line-height: 54px;
+		}
+	}
+
+	.half-cloud{
+		width: 40%;
+	}
+
+	#clientes{
+		img{
+			width: 15%;
+		}
+	}
+
+}

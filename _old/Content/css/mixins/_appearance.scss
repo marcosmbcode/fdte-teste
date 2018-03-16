@@ -1,0 +1,12 @@
+// Appearance
+
+@mixin appearance ($value){
+    appearance: $value;
+    -o-appearance: $value; 
+    -moz-appearance: $value; 
+    -khtml-appearance: $value; 
+    -webkit-appearance: $value;
+}
+
+
+    

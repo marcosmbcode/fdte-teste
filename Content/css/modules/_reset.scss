@@ -1,0 +1,93 @@
+// Reset
+ 
+* {
+	margin: 0;
+	padding: 0;
+	font-style: inherit;
+	@include box-sizing(border-box);
+	font: {
+		family: $primary-fonte;
+		size: 12px;
+	}
+}
+
+a {
+	text-decoration: none;
+	@include transition(all 0.15s ease-in);
+}
+
+input, button, textarea, a {
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+header, footer, nav, aside, section, article {
+	display: block;
+}
+
+body {
+	overflow: hidden;
+	font: {
+		family: $primary-fonte;
+		size: 12px;
+	}
+	color: $text-color; 
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="email"],
+input[type="password"] {
+	@include appearance(none);
+	@include border-radius(0); 
+}
+
+::selection {
+	background: $primary-color;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: $primary-color;
+	color: #fff;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $secondary-color;
+    font-family: $primary-fonte;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: $secondary-color;
+    opacity:  1;
+    font-family: $primary-fonte;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $secondary-color;
+    opacity:  1;
+    font-family: $primary-fonte;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $secondary-color;
+    font-family: $primary-fonte;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $secondary-color;
+    font-family: $primary-fonte;
+}
+textarea:-moz-placeholder {
+    color: $secondary-color;
+    font-family: $primary-fonte;
+}
+textarea:-ms-input-placeholder {
+    color: $secondary-color;
+    font-family: $primary-fonte;
+}

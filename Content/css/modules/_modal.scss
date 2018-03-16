@@ -1,0 +1,96 @@
+
+.mask{
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(202,202,202, 0.8);
+    z-index: 20;
+    @extend .none;
+}
+
+.window {
+    width: 32%;
+   /* background-color: $tertiary-color;*/
+    top: 149px !important;
+    z-index: 200;
+    left: 50% !important;
+    padding: 20px 0;
+    position: fixed;
+    max-height: 80%;
+    overflow: auto;
+    @include transform(translateX(-50%));
+    @extend .none;
+
+    .close{
+        color: $primary-color;
+        font-size: 16px;
+        top: 35px;
+        right: 23px;      
+
+        @extend .absolute;
+
+        &:hover{
+            color: $quaternary-color;
+        }
+    }
+
+    .content-modal{
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .title {
+        /*color: $quaternary-color;*/
+        font-size: 30px;        
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-left: 30px;
+        float: right; 
+        margin-right: 40px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-left: 30px;
+        color: $primary-color;
+        float: right; 
+        margin-top: 120px;
+        margin-right: -205px;
+        text-align: right;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: $max-width) {
+
+    .window{
+        width: 60%;
+    }
+
+
+}
+
+/* mobile */
+@media screen and (max-width: $mobile-width) {
+
+    .window{
+        top: 110px;
+        width: 94%;
+        left: 3% !important;
+        @include transform(translateX(0%));
+    }
+
+
+}
+

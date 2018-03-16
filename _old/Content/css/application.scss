@@ -1,0 +1,32 @@
+// Library
+@import "compass";
+
+// Mixins
+@import "mixins/animation";
+@import "mixins/appearance";
+@import "mixins/keyframes";
+@import "mixins/backface-visibility";
+@import "mixins/user-select";
+
+// Modules
+@import "modules/variables";
+@import "modules/reset";
+@import "modules/helpers";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/slider";
+
+// Libs
+@import "libs/jquery.fullpage.min.css";
+
+// Pages
+@import "pages/global";
+@import "pages/clientes";
+@import "pages/cases";
+@import "pages/contato";
+
+//Partials
+@import "partials/mobile";
+
+//Sprites
+@import "sprites/clientes";

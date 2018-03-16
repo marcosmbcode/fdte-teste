@@ -1,0 +1,90 @@
+
+@font-face {
+  font-family: 'icon-duka';
+  src:  url('../../fonts/icon-duka.eot?1ob4rg');
+  src:  url('../../fonts/icon-duka.eot?1ob4rg#iefix') format('embedded-opentype'),
+    url('../../fonts/icon-duka.ttf?1ob4rg') format('truetype'),
+    url('../../fonts/icon-duka.woff?1ob4rg') format('woff'),
+    url('../../fonts/icon-duka.svg?1ob4rg#icon-duka') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-duka' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+
+body {
+	background: #fff;
+  overflow: auto;
+}
+
+#header-quem-somos  {
+	height: 820px;
+	background-image: url(../../images/interna/images_01.png);
+	background-size: 100% 693px;
+    background-repeat: no-repeat;
+}
+
+#header-quem-somos .box-info {text-align: center; margin: 0 auto;  width: 44%;  padding-top: 200px;}
+#header-quem-somos .box-info h4 {color: #fff;  font-size: 45px; font-family: 'Open Sans', sans-serif; font-weight: 300;}
+#header-quem-somos .box-info h2 {color: #fff;  font-size: 80px; font-family: 'Open Sans', sans-serif; font-weight: 700;}
+
+#quem-somos {height: 480px;}
+#quem-somos h3 { font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: 700; color: #e4b200;}
+#quem-somos .box-info-quem-somos { margin: 0 auto; width: 80%;}
+#quem-somos .box-info-quem-somos p {font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 400;}
+
+#pensamentos-duka {	background-image: url(../../images/interna/bg_pensamentos_duka.png); 	height: 1450px; width: 100%; background-size: 100%; background-repeat: no-repeat; margin-top: -190px;}
+#pensamentos-duka .box-info-pensamentos {margin: 270px auto;  width: 50%;}
+#pensamentos-duka .box-info-pensamentos  .box-conteudo-missao {height: 245px;}
+#pensamentos-duka .box-info-pensamentos  .box-conteudo-valores {height: 550px;}
+#pensamentos-duka .box-info-pensamentos  .titulo-pensamentos-duka {height: 145px;}
+#pensamentos-duka .box-info-pensamentos .titulo { font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: 700; color: #e4b200; }
+#pensamentos-duka .box-info-pensamentos .box-conteudo-missao .sub-titulo { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; color: #000000; position: relative; right: 40px; }
+#pensamentos-duka .box-info-pensamentos .box-conteudo-missao .sub-titulo::before{ content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; width: 0;  height: 0;  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;   border-bottom: 26px solid #e4b200; }
+
+
+#pensamentos-duka .box-info-pensamentos .box-conteudo-valores .sub-titulo { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; color: #000000; position: relative; right: 40px; }
+#pensamentos-duka .box-info-pensamentos .box-conteudo-valores .sub-titulo::before{ content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; width: 0;  height: 0;  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;   border-bottom: 26px solid #e4b200; }
+
+  #pensamentos-duka .box-info-pensamentos .box-conteudo-visao .sub-titulo { font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 700; color: #000000; position: relative; right: 40px; }
+#pensamentos-duka .box-info-pensamentos .box-conteudo-visao .sub-titulo::before{ content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; width: 30px;  height: 30px; border-bottom: 26px solid #e4b200; }
+
+
+#pensamentos-duka .box-info-pensamentos .descricao { font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 400; color: #000000; }
+#pensamentos-duka .box-info-pensamentos .descricao-destaque {font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 600; color: #000000;}
+
+footer {background-image: url(../../images/interna/bg_footer.png);background-size: 100%;background-repeat: no-repeat; height: 440px; background-position: center bottom;}
+footer .box-info-footer { margin: 0 auto; width: 50%;  text-align: center;  padding-top: 340px;}
+footer .box-info-footer h5 {font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 400; color: #999999;}
+footer .box-info-footer .redes-sociais {  text-align: center;  margin: 0 auto;  width: 18%; height: 20px;}
+footer li {list-style: none; float: left; margin-left: 10px;}
+footer li a {color: #000;}

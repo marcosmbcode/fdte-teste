@@ -1,0 +1,244 @@
+// Header
+
+body {
+  overflow: auto !important;
+}
+
+header {
+    background-image: url("../images/bg-header.png");
+    width: 100%;
+    background-position: center;
+    height: 243px;
+
+    .logo {
+      text-align: center;
+    }
+
+    .busca {
+      text-align: center;
+
+      input{
+        width: 350px;
+        border: none;
+        border-radius: 3px;
+        height: 25px;
+      }
+      ::-webkit-input-placeholder{
+      color: #939393;
+       }
+    }
+
+    .box-topo-esquerda {
+      width: 25%;
+      float: left;
+      .icone-atendimento-header{
+        margin-left: 45px;
+          position: relative;
+          top: 20px;
+          font-weight: 800;
+      }
+      .icone-sac{
+          position: relative;
+          top: 20px;
+          font-weight: 800;
+      }
+    }
+
+    .box-topo-direita {
+      float: right;
+      margin-right: 49px;
+      margin-top: 20px;
+      .icone-meus-pedidos-header{
+        margin-right: 45px;
+      }
+    }
+
+    .box-header-redes-sociais{
+      width: 21%;
+      float: left;
+      margin-left: 45px;
+      img{
+        margin-left: 20px;
+      }
+    }
+
+    .box-minha-conta-item-header {
+      width: 15%;
+      float: right;
+      margin-right: 49px;
+      .icone-minha-conta-header{
+        position: relative;
+        left: 15px;
+      }
+
+      .icone-itens-header{
+        position: relative;
+        bottom: 25px;
+        left: 35px;
+      }
+
+
+    }
+} 
+ 
+#menu-categorias {
+  display: flex;
+  height: 110px;
+  background-color: #101883;
+
+  .categorias{
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .icone-menu-categoria{
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .titulo-categoria {
+    color: $secondary-color;
+    text-transform: uppercase;
+  }
+
+  .categoria-hallowen{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #0a59c2;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .categoria-festas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #ea4235;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+
+  .categoria-fantasias{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #fcac01;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .categoria-descartaveis{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #00a204;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+   .categoria-artigos-festas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #5f3bb9;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .categoria-baloes{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #a400ae;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  
+  .categoria-doces{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #d24726;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .categoria-lembrancinhas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #459d6d;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .categoria-todas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 90px;
+    background-color: #00bff3;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+}
+
+#informacoes-frete-pagamento {
+  display: flex;
+  height: 110px;
+  background-color: transparent;
+ 
+  .informacoes{
+    display: flex;
+    width: 88%;
+    margin-left: 155px !important;
+    margin: 40px auto;
+
+     .frete {
+   width: 25%;
+    }
+   
+    .parcelas{
+         width: 25%;
+    }  
+
+    .boleto {
+       width: 25%;
+    }
+
+    .seguranca {
+       width: 25%;
+    }
+  }
+}

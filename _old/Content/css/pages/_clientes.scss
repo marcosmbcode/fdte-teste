@@ -1,0 +1,56 @@
+// Clientes
+.grade{
+	width:58%;
+	@extend .absolute;
+	@extend .block;
+
+	&.dark{
+		width: 60%;
+		top: 20%;
+		right: -35%;
+		@include opacity(0.4);
+	}
+
+	&.light{
+		bottom: -2%;
+		left: -38%;
+	}
+}
+
+.cliente-logo{
+	@extend .relative;
+	display: none;
+}
+
+.clientes-sprite{
+	width: 200px;
+	height: 108px;
+	@extend .block;
+	margin: 0 auto; 
+}
+
+.list-client{
+	width: 80%;
+	margin: 0 auto; 
+	@extend .block;
+	@extend .align-center;
+
+	li{
+		width: 33%;
+		@extend .float-left;
+		@extend .block;
+		margin-bottom: 30px;
+		
+		/*
+		&:last-child{
+			clear: both;
+			float: none;
+			margin: 0 auto; 
+		}*/
+	}
+
+	.space-top{
+		top: 60px;
+		@extend .relative;
+	}
+}

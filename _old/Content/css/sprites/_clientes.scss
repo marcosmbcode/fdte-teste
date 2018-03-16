@@ -1,0 +1,20 @@
+@import "sprites/clientes/*.png";
+@include all-clientes-sprites;
+
+@import "sprites/marcas/*.png";
+@include all-marcas-sprites;
+
+
+.marcas-sprite{
+	width: 70px;
+	height: 70px;	
+	@extend .block;
+	margin: 0 auto;
+
+	&.marcas-marcas-liquigas{
+		width: 149px;
+	}
+	&.marcas-marcas-brahma{
+		width: 119px;
+	}
+}

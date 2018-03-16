@@ -1,0 +1,142 @@
+// Produtos
+
+
+#categorias-produtos{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	.tipo-produto {
+		width: 25%;
+		img{
+			width: 90%;
+		}
+	}
+}
+
+
+aside {
+	width: 30%;
+    margin-left: 25px;
+    float: left;
+    .titulo-categoria{
+    	font-size: 16px;
+	    color: $primary-color;
+	    border-bottom: 2px solid #e7aa2b;
+	    width: 206px;
+    }
+    a {
+    	color: $primary-color;
+    }
+
+    ul {
+    	margin-bottom: 20px;
+    }
+
+    .veja-mais{
+    	margin-left: 135px;
+    }
+}
+
+
+#parceiros{
+	margin: 0 auto;
+    width: 60%;
+    height: 150px;
+
+    .carousel-parceiros {
+    	img{
+    		width: 80%;
+    	}
+    }
+}
+
+#lancamentos{
+	margin: 0 auto;
+    width: 60%;
+    height: 150px;
+
+    .carousel-parceiros {
+    	img{
+    		width: 80%;
+    	}
+    }
+}
+
+#banner-produtos{
+	margin: 0 auto;
+    width: 60%;
+    display: flex;
+	.banners{
+		width: 35%;
+    	margin-top: 220px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    	img{
+    		width: 100%;
+    	}
+	}
+}
+
+#mais-vistos {
+	margin: 0 auto;
+    width: 60%;
+    height: 150px;
+    margin-bottom: 300px;
+    .carousel-parceiros {
+    	img{
+    		width: 47%;
+    		position: absolute !important;
+    	}
+    }
+}
+
+
+#banner-surpreenda {
+	height: 315px;
+	img{
+		width: 100%;
+	}
+}
+
+#newsletter {
+	width: 100%;
+	height: 100px;
+	background-color: #ffbd07;
+	margin-bottom: 30px;
+
+	.news-max{
+		margin-left: 160px;
+		color: $secondary-color;
+		position: relative;
+    	top: 10px;
+		img{
+			position: relative;
+   			top: 15px;
+   			margin-right: 5px;
+		}
+	}
+	.news-cadastre-se{
+		margin-left: 210px;
+		color: $secondary-color;
+		margin-right: 50px;
+	}
+
+	input{
+		border: none;
+	    border-radius: 3px;
+	    height: 25px;
+	    width: 20%;
+	}
+
+	::-webkit-input-placeholder{
+		color: #939393;
+	}
+
+	.btn-enviar{
+		width: 10%;
+		background-color: #101883;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+

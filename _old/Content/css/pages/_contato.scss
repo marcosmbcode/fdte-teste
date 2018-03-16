@@ -1,0 +1,26 @@
+// Contato
+.contatoGrade{
+	width:65%;
+	top: 10%;
+	left: 18%;
+	@extend .absolute;
+	@extend .block;
+}
+
+.contatoOnda,
+.contatoOndaLight{
+	width:106%;
+	@extend .absolute;
+	@extend .block;
+	@include opacity(0.4);
+
+	&.dark{
+		bottom: -6%;
+		left: -2%;
+	}
+
+	&.light{
+		bottom: -2%;
+		left: -2%;
+	}
+}

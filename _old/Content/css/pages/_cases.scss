@@ -1,0 +1,318 @@
+.container-cases-detalhe{
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@extend .absolute;	
+	visibility: hidden;
+	@include opacity(0);
+	@include transition(all 0.25s ease);
+	display: table;
+
+	
+	/*
+	.case-detalhe{
+		@extend .none;
+
+		&.is-visible{
+			@extend .block;			
+		}
+	}*/
+
+	.case-subtitle{
+		color: $secondary-color;
+	}
+	.case-title{
+		color: $secondary-color;
+	}
+
+}
+
+.btn-close-case{
+	position: absolute;
+	bottom: 20px;
+	left: 5%;
+	color: $secondary-color;
+	font-size: 35px; 
+}
+
+
+
+.case-grade{
+	height: 78%;
+	top: 115px;
+	right: -40%;
+	z-index: 10;
+	@extend .absolute;
+	@extend .block;
+
+	&.grade-light{
+		top: 125px;
+		right: -15%;
+	}
+}
+
+.case-content{
+	width: 95%;
+	margin: 0 auto;
+	@extend .align-left;
+
+	.case-subtitle{
+		font-size: 50px;
+		font-weight: 300;
+	}
+	.case-title{
+		font-size: 70px;
+		font-weight: 800;
+	}
+}
+
+.fp-tableCell{
+	@extend .relative;
+}
+
+.cases-list{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	@extend .block;
+	@extend .absolute;
+
+	.grid-item{
+		@extend .block;
+		@extend .absolute;
+		width: 33.4%;
+		height: 50%;
+		overflow: hidden;
+
+		a{
+			&:after{
+				content: ' ';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: rgba(255,255,255,0.85);
+				visibility: hidden;
+				@extend .block;
+				@include opacity(0);
+				@include transition(all 0.3s ease);
+			}
+		}
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			@include transition(all 0.3s ease);
+		}
+
+		&:hover {
+			a{
+				&:after{
+					visibility: visible;
+					@include opacity(1);
+				}
+
+				.case-text{
+					visibility: visible;
+					@include opacity(1);
+				}
+			}
+
+			img {
+				@include transform(scale(1.1));
+			}
+		}
+
+		&.item-a,
+		&.item-g{
+			top: 0%;
+			left: 0;
+		}
+		&.item-b,
+		&.item-h{
+			top: 0%;
+			left: 33.3%;
+		}
+		&.item-c,
+		&.item-i{
+			top: 0%;
+			left: 66.6%;
+		}
+		&.item-d,
+		&.item-j{
+			bottom: 0;
+			left: 0;
+		}
+		&.item-e,
+		&.item-k{
+			bottom: 0;
+			left: 33.3%;
+		}
+		&.item-f,
+		&.item-l{
+			bottom: 0;
+			left: 66.6%;
+		}
+	}
+
+	.case-text{
+	    top: 50%;
+	    left: 0;
+	    width: 100%;
+	    color: $primary-color;
+	    font-size: 34px;
+	    line-height: 38px;
+	    z-index: 100;
+		visibility: hidden;
+		@include opacity(0);
+		@extend .absolute;
+		@extend .uppercase;
+	    @include transition(all 0.5s ease);
+	    @include transform(translateY((-50%)));
+	}
+}
+
+
+.fp-viewing-Cases-0,
+.fp-viewing-Cases-1{
+/*	header#header{
+
+		&:after{
+			top: 0;
+		}
+	}*/
+
+	.container-cases-detalhe{
+		&.is-visible{
+			visibility: visible;
+			@include opacity(1);
+		}
+	}
+}
+
+
+
+/* CASES BG */
+#CaseDetalheA{	
+	background: #ccc url('../images/cases/nbafinals/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+
+    .case-subtitle{
+    	color: #006bb7;
+    }
+    .case-title{
+    	color: #ed174b;
+    }
+}
+
+#CaseDetalheB{	
+	background: #ccc url('../images/cases/desafioLiquigas/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+
+    .case-subtitle{
+    	color: #ffffff;
+    }
+    .case-title{
+    	color: #fdc400;
+    }
+}
+
+#CaseDetalheC{	
+	background: #ccc url('../images/cases/territoriovw/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+
+    .case-subtitle{
+    	color: #ffffff;
+    }
+    .case-title{
+    	color: #021a42;
+    }
+}
+
+#CaseDetalheD{	
+	background: #ccc url('../images/cases/cebrace/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+
+    .case-subtitle{
+    	color: #4e4e4e;
+    }
+    .case-title{
+    	color: #f05547;
+    }
+}
+
+#CaseDetalheE{	
+	background: #ccc url('../images/cases/jaguaremkt/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+
+    .case-subtitle{
+    	color: #4e4e4e;
+    }
+    .case-title{
+    	color: #f05547;
+    }
+}
+
+#CaseDetalheF{	
+	background: #ccc url('../images/cases/vivodestaque/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheG{	
+	background: #ccc url('../images/cases/bohemia/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheH{	
+	background: #ccc url('../images/cases/brahma/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheI{	
+	background: #ccc url('../images/cases/santajoana/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheJ{	
+	background: #ccc url('../images/cases/petrobrasemkt/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheK{	
+	background: #ccc url('../images/cases/promatre/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
+
+#CaseDetalheL{	
+	background: #ccc url('../images/cases/portalconecta/bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    overflow: hidden;
+    @extend .relative;
+}
